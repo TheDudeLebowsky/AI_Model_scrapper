@@ -118,6 +118,9 @@ class AIScrapper():
         time.sleep(self.delay_between_download)
 
     def download_from_list(self, input_file, output_file, local_dir, use_auth_token, Cache_dir, Resume_download, Token, item_type):
+        
+        
+        #Verify if file exist
         if not os.path.exists(input_file):
             print(f"{Fore.RED}Error: {input_file} file not found.{Style.RESET_ALL}")
             return
@@ -243,9 +246,9 @@ class AIScrapper():
         """
         filename = self.API_FILE
         with open(filename, 'r') as file:
-            ACCESS_TOKEN = file.readline().strip()
-            print(f"ACCESS token : {Fore.GREEN}{Style.BRIGHT}{ACCESS_TOKEN}{Style.RESET_ALL}")
-            return ACCESS_TOKEN
+            access_token = file.readline().strip()
+            print(f"ACCESS token : {Fore.GREEN}{Style.BRIGHT}{access_token}{Style.RESET_ALL}")
+            return access_token
 
     def huggingface_scan_cache(self):  #NEED TO TEST
         """
