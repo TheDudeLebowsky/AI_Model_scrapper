@@ -1,0 +1,13 @@
+# Ignore everything
+*
+
+# But not these files...
+!/.gitignore
+!/config.py
+!/main.py
+!/README.txt
+!/requirements.txt
+
+# Explicitly ignore all other txt files, if needed
+*.txt
+!README.txt
