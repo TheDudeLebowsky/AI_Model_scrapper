@@ -1,0 +1,7 @@
+jonatasgrosman/wav2vec2-large-xlsr-53-english
+openai/clip-vit-large-patch14
+openai/whisper-large-v2
+stabilityai/stable-diffusion-xl-base-1.0
+SimianLuo/LCM_Dreamshaper_v7
+dandelin/vilt-b32-finetuned-vqa
+anon8231489123/gpt4-x-alpaca-13b-native-4bit-128g
